@@ -7,10 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<HBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-    minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" stylesheets="@../css/main.css"
-    xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
-    fx:controller="org.javaFxApp.taskManagement.Controller.MainController">
+<HBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.javaFxApp.taskManagement.Controller.MainController">
    <children>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" spacing="60.0" HBox.hgrow="NEVER">
          <children>
@@ -39,12 +36,10 @@
       </VBox>
       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="350.0" HBox.hgrow="ALWAYS">
          <children>
-            <HBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" spacing="20.0" VBox.vgrow="NEVER">
+            <HBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" spacing="40.0" VBox.vgrow="NEVER">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="81.0" prefWidth="75.0" text="Button" />
-                  <Button layoutX="223.0" layoutY="20.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="75.0" text="Button" />
-                  <Button layoutX="260.0" layoutY="20.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="75.0" text="Button" />
-                  <Button layoutX="298.0" layoutY="20.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="75.0" text="Button" />
+                  <Button mnemonicParsing="false" onAction="#handleTaskCreation" prefHeight="55.0" prefWidth="140.0" text="Create Task" />
+                  <Button layoutX="115.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleCategoryCreation" prefHeight="55.0" prefWidth="140.0" text="Create Category" />
                </children>
                <padding>
                   <Insets bottom="5.0" top="5.0" />

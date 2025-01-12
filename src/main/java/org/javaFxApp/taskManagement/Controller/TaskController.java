@@ -3,6 +3,7 @@ package org.javaFxApp.taskManagement.Controller;
 import java.util.List;
 
 import org.javaFxApp.taskManagement.Annotation.FxController;
+import org.javaFxApp.taskManagement.Payload.Response.CategoryResponse;
 import org.javaFxApp.taskManagement.Payload.Response.TaskResponse;
 import org.javaFxApp.taskManagement.Service.CategoryService;
 import org.javaFxApp.taskManagement.Service.TaskService;
@@ -155,7 +156,7 @@ public class TaskController {
         statusComboBox.setValue(task.status());
 
         ComboBox<String> categoryComboBox = new ComboBox<>();
-        var categories = categoryService.getAllCategories();
+        List<CategoryResponse> categories = categoryService.getAllCategories();
         categoryComboBox.setItems(FXCollections.observableArrayList(
             categories.stream()
                 .map(cat -> cat.name())
@@ -169,7 +170,6 @@ public class TaskController {
                 .orElse("")
         );
 
-        // Add fields to grid
         grid.add(new Label("Name:"), 0, 0);
         grid.add(nameField, 1, 0);
         grid.add(new Label("Description:"), 0, 1);
