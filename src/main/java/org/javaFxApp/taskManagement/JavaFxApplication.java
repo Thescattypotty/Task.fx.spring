@@ -1,5 +1,6 @@
 package org.javaFxApp.taskManagement;
 
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -19,7 +20,9 @@ public class JavaFxApplication extends Application{
 
     @Override
     public void init() throws Exception{
-        applicationContext = new SpringApplicationBuilder(JavaFxApplication.class).run();
+        SpringApplicationBuilder builder = new SpringApplicationBuilder(JavaFxApplication.class);
+        builder.web(WebApplicationType.NONE);
+        applicationContext = builder.run();
     }
 
 	public static void main(String[] args) {

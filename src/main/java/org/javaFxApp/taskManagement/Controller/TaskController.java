@@ -109,7 +109,7 @@ public class TaskController {
         loadTasks();
     }
 
-    private void loadTasks(){
+    public void loadTasks(){
         List<TaskResponse> tasks = taskService.getTasks();
         if(tasks.isEmpty()){
             log.info("No tasks found");

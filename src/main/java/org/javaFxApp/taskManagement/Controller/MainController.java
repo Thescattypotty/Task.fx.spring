@@ -150,6 +150,7 @@ public class MainController {
             log.info("Creating task: {}", createTask);
             taskService.createTask(createTask);
             log.info("Task created");
+            reloadTasks();
         }
     }
 
@@ -182,6 +183,17 @@ public class MainController {
             log.info("New Name: {}", newName);
             categoryService.createCategory(new CategoryRequest(newName));
             log.info("Category created");
+            reloadCategories();
         }
+    }
+
+    private void reloadTasks(){
+        TaskController taskController = applicationContext.getBean(TaskController.class);
+        taskController.loadTasks();
+    }
+
+    private void reloadCategories(){
+        CategoryController categoryController = applicationContext.getBean(CategoryController.class);
+        categoryController.loadCategories();
     }
 }

@@ -75,7 +75,7 @@ public class CategoryController {
         loadCategories();
     }
 
-    private void loadCategories() {
+    public void loadCategories() {
         categoriesList.setItems(
             FXCollections.observableArrayList(categoryService.getAllCategories())
         );
