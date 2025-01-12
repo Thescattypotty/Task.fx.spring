@@ -32,9 +32,7 @@ public class CategoryService implements ICategoryService{
     public void updateCategory(String id, CategoryRequest categoryRequest) {
         Category category = categoryRepository.findById(UUID.fromString(id))
             .orElseThrow(() -> new RuntimeException("Category not found"));
-        Category updatedCat = categoryMapper.toCategory(categoryRequest);
-        updatedCat.setId(category.getId());
-        updatedCat.setTasks(category.getTasks());
+        category.setName(categoryRequest.name());
         categoryRepository.save(category);
     }
 

@@ -19,7 +19,7 @@
             <TableColumn fx:id="status" prefWidth="150.0" text="Status" />
             <TableColumn fx:id="limitDate" prefWidth="150.0" text="Limit Date" />
             <TableColumn fx:id="category" prefWidth="150.0" text="Category" />
-            <TableColumn fx:id="createdAt" prefWidth="150.0" text="Created At"/> 
+            <TableColumn fx:id="updatedAt" prefWidth="150.0" text="Updated At" /> 
             <TableColumn fx:id="edit" prefWidth="150.0" text="Actions" />
          </columns>
         <columnResizePolicy>
