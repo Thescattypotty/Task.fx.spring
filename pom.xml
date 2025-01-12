@@ -101,7 +101,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>org.javaFxApp.javafxApp.JavaFxApplication</mainClass>
+                    <mainClass>org.javaFxApp.taskManagement.JavaFxApplication</mainClass>
                     <source>17</source>
                     <release>17</release>
                 </configuration>
