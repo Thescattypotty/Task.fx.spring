@@ -30,7 +30,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column(name = "name", nullable = false, unique = true)
+    @Column(name = "name")
     private String name;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "category", orphanRemoval = true)

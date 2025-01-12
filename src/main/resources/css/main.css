@@ -1,0 +1,95 @@
+/* main.css */
+
+.root {
+    -fx-background-color: #2c3e50;
+}
+HBox {
+    -fx-background-color: #2c3e50;
+}
+
+Label {
+    -fx-text-fill: #ecf0f1;
+}
+
+Button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: #ecf0f1;
+    -fx-background-radius: 5;
+}
+
+Button:hover {
+    -fx-background-color: #2980b9;
+}
+
+ScrollPane {
+    -fx-background-color: #34495e;
+}
+
+ScrollPane .viewport {
+    -fx-background-color: #34495e;
+}
+
+ScrollPane .content {
+    -fx-padding: 10;
+}
+
+TableView {
+    -fx-background-color: #34495e;
+}
+
+TableColumn {
+    -fx-background-color: #34495e;
+}
+
+TableView .column-header,
+TableView .column-header-background .filter{
+    -fx-background-color: #34495e;
+}
+
+TableView .column-header-background .label {
+    -fx-text-fill: #F2F2F2;
+    -fx-background-color: #2c3e50;
+}
+TableRowCell:selected {
+    -fx-background-color: #2980b9;
+}
+
+ScrollPane .scroll-bar:vertical .thumb,
+ScrollPane .scroll-bar:horizontal .thumb {
+    -fx-background-color: #3498db;
+    -fx-background-radius: 5;
+}
+
+ScrollPane .scroll-bar:vertical .track,
+ScrollPane .scroll-bar:horizontal .track {
+    -fx-background-color: #2c3e50;
+}
+
+ScrollPane .scroll-bar:vertical .increment-button,
+ScrollPane .scroll-bar:horizontal .increment-button,
+ScrollPane .scroll-bar:vertical .decrement-button,
+ScrollPane .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: #2980b9;
+    -fx-background-radius: 5;
+}
+
+AnchorPane {
+    -fx-background-color: #34495e;
+}
+
+HBox .label {
+    -fx-text-fill: #ecf0f1;
+}
+
+VBox .label {
+    -fx-text-fill: #ecf0f1;
+}
+
+VBox .button {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: #ecf0f1;
+}
+
+VBox .button:hover {
+    -fx-background-color: #c0392b;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+
+<AnchorPane prefHeight="360.0" prefWidth="350.0" stylesheets="@../css/main.css"
+    xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="org.javaFxApp.javafxApp.Controller.TaskController">
+   <children>
+        <TableView fx:id="tasksList" prefHeight="340.0" prefWidth="200.0"
+            AnchorPane.bottomAnchor="0.0"
+            AnchorPane.leftAnchor="0.0"
+            AnchorPane.rightAnchor="0.0"
+            AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="name" prefWidth="200.0" text="Name" />
+            <TableColumn fx:id="status" prefWidth="150.0" text="Status" />
+            <TableColumn fx:id="limitDate" prefWidth="150.0" text="Limit Date" />
+            <TableColumn fx:id="category" prefWidth="150.0" text="Category" />
+            <TableColumn fx:id="createdAt" prefWidth="150.0" text="Created At"/> 
+            <TableColumn fx:id="edit" prefWidth="150.0" text="Actions" />
+         </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

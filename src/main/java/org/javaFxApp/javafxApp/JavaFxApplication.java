@@ -33,7 +33,6 @@ public class JavaFxApplication extends Application{
         fxmlLoader.setControllerFactory(applicationContext::getBean);
 
         Parent root = fxmlLoader.load();
-
         arg0.setScene(new Scene(root));
         arg0.show();
     }
