@@ -1,11 +1,11 @@
 package org.javaFxApp.javafxApp.Payload.Mapper;
 
+import org.javaFxApp.javafxApp.Annotation.Mapper;
 import org.javaFxApp.javafxApp.Entity.Category;
 import org.javaFxApp.javafxApp.Payload.Request.CategoryRequest;
 import org.javaFxApp.javafxApp.Payload.Response.CategoryResponse;
-import org.springframework.stereotype.Service;
 
-@Service
+@Mapper
 public class CategoryMapper {
     
     public Category toCategory(CategoryRequest categoryRequest) {
@@ -14,7 +14,7 @@ public class CategoryMapper {
             .build();
     }
 
-    public CategoryResponse toCategoryResponse(Category category) {
+    public CategoryResponse fromCategory(Category category) {
         return new CategoryResponse(
             category.getId().toString(),
             category.getName()

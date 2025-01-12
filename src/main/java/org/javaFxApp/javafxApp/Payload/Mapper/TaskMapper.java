@@ -2,13 +2,13 @@ package org.javaFxApp.javafxApp.Payload.Mapper;
 
 import java.time.format.DateTimeFormatter;
 
+import org.javaFxApp.javafxApp.Annotation.Mapper;
 import org.javaFxApp.javafxApp.Entity.Task;
 import org.javaFxApp.javafxApp.Enum.EStatus;
 import org.javaFxApp.javafxApp.Payload.Request.TaskRequest;
 import org.javaFxApp.javafxApp.Payload.Response.TaskResponse;
-import org.springframework.stereotype.Service;
 
-@Service
+@Mapper
 public class TaskMapper {
     
     public Task toTask(TaskRequest taskRequest){
@@ -16,7 +16,7 @@ public class TaskMapper {
             .name(taskRequest.name())
             .description(taskRequest.description())
             .limitDate(taskRequest.limitDate())
-            .status(EStatus.valueOf(taskRequest.status()))
+            .status(taskRequest.status() != null ? EStatus.valueOf(taskRequest.status()) : EStatus.PENDING)
             .build();
     }
     public TaskResponse fromTask(Task task){

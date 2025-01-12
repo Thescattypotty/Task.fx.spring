@@ -1,11 +1,11 @@
 package org.javaFxApp.javafxApp.Controller;
 
-import org.springframework.stereotype.Component;
+import org.javaFxApp.javafxApp.Annotation.FxController;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-@Component
+@FxController
 public class MainController {
     
     @FXML
