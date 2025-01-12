@@ -7,7 +7,7 @@
 <AnchorPane prefHeight="360.0" prefWidth="350.0" stylesheets="@../css/main.css"
     xmlns="http://javafx.com/javafx/23.0.1"
     xmlns:fx="http://javafx.com/fxml/1"
-    fx:controller="org.javaFxApp.javafxApp.Controller.CategoryController">
+    fx:controller="org.javaFxApp.taskManagement.Controller.CategoryController">
     <children>
         <TableView fx:id="categoriesList" prefHeight="340.0" prefWidth="200.0" 
                    AnchorPane.bottomAnchor="0.0" 

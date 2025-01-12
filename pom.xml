@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.javaFxApp</groupId>
-	<artifactId>javafxApp</artifactId>
+	<artifactId>taskManagement</artifactId>
 	<version>0.0.1</version>
-	<name>JavaFxApplication</name>
+	<name>Task Management System With Spring and JavaFX</name>
 	
 	<properties>
 		<java.version>17</java.version>

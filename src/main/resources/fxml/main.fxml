@@ -7,7 +7,10 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<HBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.javaFxApp.javafxApp.Controller.MainController">
+<HBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+    minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" stylesheets="@../css/main.css"
+    xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="org.javaFxApp.taskManagement.Controller.MainController">
    <children>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" spacing="60.0" HBox.hgrow="NEVER">
          <children>
